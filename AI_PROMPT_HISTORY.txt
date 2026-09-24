@@ -1,0 +1,282 @@
+1. ChatGPT
+Prompt:
+
+I am working on a Frontend Developer Practical Assessment. I need to build Task 1: a modern, professional mobile Order Tracking screen for an e-commerce application using Next.js, JavaScript, Tailwind CSS, and Lucide React.
+
+The screen must handle these three states:
+
+1. Delayed Order
+2. Delivered but Not Received
+3. Tracking Not Available Yet
+
+Requirements include:
+
+- Clear visual delivery progress/timeline
+- Current order status
+- Estimated delivery date/time
+- Order/product summary
+- Contact support
+- Appropriate loading, empty, and error states where relevant
+- Responsive design for approximately 360–430px mobile widths
+- Meaningful interactions such as viewing order details, contacting support, or reporting a delivery issue
+- Mock/static data is allowed
+- No backend is required
+
+First, analyze the requirements and propose a practical implementation plan, component structure, data structure, UI hierarchy, interactions, and state-handling approach. Do not write the full implementation code yet. Keep the solution realistic for a 4-hour frontend assessment and prioritize a clean, polished UI and functionality.
+
+
+2. ChatGPT
+Prompt:
+
+Based on the implementation plan above, let's start building the project.
+
+Use Next.js App Router, JavaScript, Tailwind CSS, and Lucide React. Keep the implementation simple and suitable for a 4-hour frontend assessment.
+
+First, provide the exact project folder structure and create the mock order data structure for these three states:
+
+1. delayed
+2. delivered_not_received
+3. tracking_unavailable
+
+The data should include the order ID, product information, current status, estimated delivery, and timeline events.
+
+Then provide the initial implementation for the main order tracking page and the reusable components needed for the core UI.
+
+Do not add unnecessary libraries, backend integration, authentication, or global state management.
+
+Keep the code clean, readable, reusable, and easy for me to explain in an interview.
+
+
+3. ChatGPT
+Prompt:
+
+I have implemented the core Order Tracking screen based on your previous response.
+
+Before adding new features, review the current implementation against the assessment requirements and help me improve the UI.
+
+Focus specifically on:
+- Mobile responsiveness at 360px, 375px, 390px, and 430px widths
+- Visual hierarchy, spacing, typography, and consistency
+- Clear distinction between delayed, delivered but not received, and tracking unavailable states
+- Delivery timeline readability
+- Estimated delivery information
+- Order/product summary
+- Support section
+- Accessibility basics such as button labels, semantic HTML, and sufficient text readability
+- Clean and professional e-commerce UI
+
+Keep the existing architecture simple and do not introduce unnecessary libraries or major restructuring.
+
+First identify any issues or improvements needed in the current implementation. Then provide the exact code changes needed.
+
+Do not add the three advanced interactions yet. We will implement those after the core UI is polished.
+
+
+4. ChatGPT
+Prompt:
+
+The core Order Tracking UI improvements are now implemented.
+
+Next, let's implement the three advanced interactions required for the assessment:
+
+1. View Order Details
+2. Contact Support
+3. Report Delivery Issue
+
+Requirements:
+
+* Keep the existing Next.js App Router + JavaScript + Tailwind CSS + Lucide React architecture.
+* Do not introduce unnecessary libraries or backend integration.
+* Use simple local state for interactions.
+* Make the interactions feel realistic and professional on mobile screens between 360px and 430px.
+* Use accessible buttons, labels, focus states, and semantic HTML.
+
+For "View Order Details":
+
+* Add a clear button/action from the order summary.
+* Open a suitable modal, dialog, or expandable section.
+* Show useful information such as order ID, product, quantity, price, estimated delivery, current status, and relevant order information.
+* Make it easy to close on mobile.
+
+For "Contact Support":
+
+* Add a support action that opens a simple support interface.
+* It can be a modal or bottom-sheet-style UI.
+* Include realistic options such as contacting support, email/chat, or explaining what information the customer should provide.
+* Adapt the wording/action based on the current order state where appropriate.
+
+For "Report Delivery Issue":
+
+* This interaction is especially important for the "delayed" and "delivered_not_received" states.
+* Open a form/modal where the customer can select or describe an issue.
+* Include appropriate issue options for the current state.
+* Include a short description field and a submit action.
+* After submission, show a clear success/confirmation state.
+* For "tracking_unavailable", avoid presenting an inappropriate delivery-issue action; provide a suitable support/tracking action instead.
+
+Also make sure:
+
+* The interactions work correctly when switching between all three tracking states.
+* No state is broken or left without an appropriate action.
+* Buttons have clear labels and sufficient touch target sizes.
+* The UI remains clean and unclu
+
+
+5. ChatGPT
+Prompt:
+
+The three advanced interactions are now implemented and working:
+
+1. View Order Details
+2. Contact Support
+3. Report Delivery Issue
+
+Now I want to do a final QA and assessment-readiness review of Task 1 before deployment.
+
+Review the complete current implementation against the original assessment requirements.
+
+Focus on:
+
+### 1. Functional QA
+
+* Verify all three states work correctly:
+
+  * delayed
+  * delivered_not_received
+  * tracking_unavailable
+* Verify switching between states does not leave stale modal state or broken UI.
+* Verify View Order Details works for all states.
+* Verify Contact Support works for all states.
+* Verify Report Delivery Issue works correctly for delayed and delivered_not_received.
+* Verify tracking_unavailable does not show an inappropriate delivery issue action.
+* Verify form validation and successful submission state.
+* Check for possible runtime errors, undefined values, incorrect imports/exports, or state-related bugs.
+
+### 2. Responsive QA
+
+Review the UI specifically for:
+
+* 360px
+* 375px
+* 390px
+* 430px
+
+Look for:
+
+* horizontal overflow
+* clipped text
+* buttons becoming too small
+* modal/bottom-sheet overflow
+* excessive padding
+* timeline layout problems
+* image sizing problems
+* long product/order information breaking the layout
+
+### 3. Accessibility QA
+
+Check:
+
+* semantic HTML
+* heading hierarchy
+* button labels
+* form labels
+* keyboard accessibility
+* Escape behavior for modals
+* focus states
+* sufficient text readability
+* color not being the only way to communicate status
+* appropriate ARIA attributes
+* touch target sizes
+
+### 4. Assessment requirement check
+
+Verify that the implementation clearly covers:
+
+* visual delivery progress/timeline
+* current order status
+* estimated delivery date/time
+* order/product summary
+* contact support
+* loading state
+* empty state
+* error state
+* delayed order handling
+* delivered but not received handling
+* tracking unavailable handling
+* meaningful interactions
+* professional mobile e-commerce UI
+* clean and readable code
+* mock/static data without unnecessary backend integration
+
+### 5. Code quality
+
+Check whether:
+
+* components are reasonably reusable
+* state management is simple
+* there is unnecessary code
+* there are unnecessary dependencies
+* naming is clear
+* there are duplicated patterns that should be simplified
+* the implementation is easy to explain in a frontend interview
+
+Do not add new major features or libraries.
+
+For every issue you find:
+
+1. Explain why it is an issue.
+2. Give the exact file that needs to change.
+3. Provide the exact code change.
+4. Clearly separate required fixes from optional polish.
+
+If the current implementation already satisfies a requirement, explicitly say so instead of changing it unnecessarily.
+
+At the end, provide a concise final checklist of what I should test manually before deploying Task 1.
+
+Do not redesign the application or introduce unnecessary complexity. The goal is to make the current implementation stable, polished, assessment-ready, and easy to explain.
+
+6. ChatGPT
+Prompt:
+
+Create a clean, professional, reusable `not-found.jsx` page for my Next.js App Router e-commerce application.
+
+Requirements:
+
+- Use JavaScript/JSX, Tailwind CSS, and Lucide React.
+- This is a global e-commerce 404 page, so do not make it specific to orders or order tracking.
+- Keep the design consistent with the existing application.
+- Use a clean white background, professional spacing, clear typography, and a modern e-commerce feel.
+- Show a suitable Lucide icon or simple visual element for the not-found state.
+- Include:
+  - A clear "404" indicator
+  - A friendly heading such as "Page not found"
+  - A short message explaining that the page may have been moved or does not exist
+  - A primary "Back to Home" button linking to `/`
+  - An optional secondary "Go Back" action using browser history if it can be implemented cleanly
+- Make it fully responsive, especially for mobile widths around 360px–430px.
+- Ensure buttons have accessible labels, proper focus states, and sufficient touch targets.
+- Do not introduce any new libraries.
+- Do not add unnecessary animations or complex logic.
+- Keep the code simple, reusable, and easy to explain in a frontend interview.
+
+First briefly explain the design approach, then provide the complete `not-found.jsx` code.
+
+7. ChatGPT
+Prompt:
+
+Create a clean and professional `loading.jsx` page for my Next.js App Router e-commerce application.
+
+Requirements:
+
+* Use JavaScript/JSX, Tailwind CSS, and Lucide React.
+* This should be a reusable route-level loading UI for the e-commerce application.
+* Keep the design consistent with the existing application.
+* Use a clean white background, professional spacing, clear typography, and a modern e-commerce feel.
+* Show a simple loading indicator using Lucide React and an appropriate loading animation.
+* Include a clear heading such as "Loading order details" and a short supporting message.
+* Make it responsive for mobile widths around 360px–430px.
+* Use accessible markup and ensure the loading indicator is understandable without relying only on color.
+* Do not introduce any new libraries.
+* Do not add unnecessary logic or complex animations.
+* Keep the implementation simple, reusable, and easy to explain in a frontend interview.
+* Provide the complete `loading.jsx` code.
