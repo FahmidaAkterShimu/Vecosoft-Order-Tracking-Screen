@@ -1,4 +1,4 @@
-1. ChatGPT
+============= 1. ChatGPT ============
 Prompt:
 
 I am working on a Frontend Developer Practical Assessment. I need to build Task 1: a modern, professional mobile Order Tracking screen for an e-commerce application using Next.js, JavaScript, Tailwind CSS, and Lucide React.
@@ -25,7 +25,7 @@ Requirements include:
 First, analyze the requirements and propose a practical implementation plan, component structure, data structure, UI hierarchy, interactions, and state-handling approach. Do not write the full implementation code yet. Keep the solution realistic for a 4-hour frontend assessment and prioritize a clean, polished UI and functionality.
 
 
-2. ChatGPT
+========== 2. ChatGPT ============
 Prompt:
 
 Based on the implementation plan above, let's start building the project.
@@ -47,7 +47,7 @@ Do not add unnecessary libraries, backend integration, authentication, or global
 Keep the code clean, readable, reusable, and easy for me to explain in an interview.
 
 
-3. ChatGPT
+=========== 3. ChatGPT ============
 Prompt:
 
 I have implemented the core Order Tracking screen based on your previous response.
@@ -72,7 +72,7 @@ First identify any issues or improvements needed in the current implementation. 
 Do not add the three advanced interactions yet. We will implement those after the core UI is polished.
 
 
-4. ChatGPT
+============= 4. ChatGPT ============
 Prompt:
 
 The core Order Tracking UI improvements are now implemented.
@@ -122,7 +122,7 @@ Also make sure:
 * The UI remains clean and unclu
 
 
-5. ChatGPT
+============ 5. ChatGPT ============
 Prompt:
 
 The three advanced interactions are now implemented and working:
@@ -235,7 +235,7 @@ At the end, provide a concise final checklist of what I should test manually bef
 
 Do not redesign the application or introduce unnecessary complexity. The goal is to make the current implementation stable, polished, assessment-ready, and easy to explain.
 
-6. ChatGPT
+============= 6. ChatGPT ===========
 Prompt:
 
 Create a clean, professional, reusable `not-found.jsx` page for my Next.js App Router e-commerce application.
@@ -261,7 +261,8 @@ Requirements:
 
 First briefly explain the design approach, then provide the complete `not-found.jsx` code.
 
-7. ChatGPT
+
+=============== 7. ChatGPT ==============
 Prompt:
 
 Create a clean and professional `loading.jsx` page for my Next.js App Router e-commerce application.
@@ -280,3 +281,90 @@ Requirements:
 * Do not add unnecessary logic or complex animations.
 * Keep the implementation simple, reusable, and easy to explain in a frontend interview.
 * Provide the complete `loading.jsx` code.
+
+============== 8. ChatGPT ================
+Prompt:
+
+I have completed Task 1 of my Frontend Developer Practical Assessment: a modern mobile e-commerce Order Tracking screen built with Next.js App Router, JavaScript, Tailwind CSS, and Lucide React.
+
+Now create a professional `README.md` for the Task 1 project based strictly on the assessment requirements and the implementation I have built.
+
+The README should include:
+
+1. Project Overview
+
+- Briefly explain what the Order Tracking screen does.
+- Mention that it is designed for a mobile e-commerce experience.
+
+2. Features
+   Clearly document:
+
+- Visual delivery progress/timeline
+- Current order status
+- Estimated delivery date/time
+- Product/order summary
+- Contact Support
+- View Order Details
+- Report Delivery Issue
+- Loading state
+- Empty / Order Not Found state
+- Error state
+- Responsive mobile design
+
+3. Supported Order States
+   Explain the three required order tracking states:
+
+- Delayed
+- Delivered but Not Received
+- Tracking Not Available Yet
+
+Explain briefly how the UI and available actions adapt to each state.
+
+4. Interactions
+   Describe:
+
+- View Order Details
+- Contact Support
+- Report Delivery Issue
+- State switching between the three order states
+- Issue form validation and success confirmation
+- Appropriate actions for the Tracking Unavailable state
+
+5. Tech Stack
+
+- Next.js
+- JavaScript
+- Tailwind CSS
+- Lucide React
+
+Do not mention any library, framework, backend, database, or technology that is not actually used.
+
+6. Project Structure
+   Show a concise folder structure based on the actual project structure.
+7. Responsive Design
+   Mention that the interface is designed and tested for approximately 360px, 375px, 390px, and 430px mobile widths.
+8. Accessibility
+   Briefly mention the implemented accessibility considerations such as semantic HTML, labels, focus states, readable text, and touch-friendly controls.
+9. Getting Started
+   Provide the exact basic steps to install dependencies and run the project locally.
+10. Deployment
+    Include a section with placeholders for:
+
+- Live Demo URL
+- GitHub Repository URL
+
+Do not invent URLs. Use placeholders such as:
+`[Live Demo URL]`
+`[GitHub Repository URL]`
+
+11. Assessment Coverage
+    Add a concise checklist showing how Task 1 requirements are covered.
+
+Important:
+
+- Write the README in clear, professional, natural language.
+- Keep it concise and relevant to the assessment.
+- Do not exaggerate or claim features that are not implemented.
+- Do not add unnecessary sections such as contribution guidelines or license information.
+- Do not change the project code.
+- Provide the complete `README.md` content ready to copy and paste.
